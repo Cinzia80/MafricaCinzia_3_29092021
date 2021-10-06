@@ -105,6 +105,10 @@ body {
   animation: spin 2s linear;
 }
 
+.logo_ohmyfood {
+  text-align: center;
+}
+
 .logo {
 	text-align: center;
 	padding: 1rem 0 0 1rem;
@@ -119,6 +123,11 @@ body {
 
 .map i {
 	padding-right:20px;
+}
+
+.info {
+  background-color: #f1f1f3;
+  padding: 20px 20px 40px 20px;
 }
 
 .titre {
@@ -140,7 +149,7 @@ button {
   z-index: 1;
   padding: 1rem;
   border: none;
-  margin-left: 650px;
+  margin-left: 625px;
 }
 
 .choisir_box_element {
@@ -150,8 +159,10 @@ button {
   justify-content: space-evenly;
   width: 25%;
   align-items: center;
-  background: #f2f2f2;
-  border-radius: 25px 25px 25px 25px;
+  box-shadow: 0 6px 10px #0000004b;
+  border-radius: 20px;
+  background-color: #fff;
+  font-weight: bold;
   padding: 10px;
   margin-bottom: 20px;
 }
@@ -184,6 +195,20 @@ button {
 
 .choisir_box i {
   color: #6a6767;
+}
+
+.item_green {
+  position: absolute;
+  text-align: center;
+  right: 20px;
+  font-size: small;
+  font-weight: bold;
+  background: #99e2d0;
+  box-shadow: 3px 3px 10px rgb(0 0 0 / 50%);
+  border-radius: 2px;
+  color: green;
+  padding: 7px 17px 7px 17px;
+  bottom: 16rem;
 }
 
 .restaurant_4menu {
@@ -304,13 +329,19 @@ footer i {
   }
 
   .arrow_left {
-    margin-top: 20px;
-    margin-left: -40px;
+    margin-top: 30px;
+    margin-left: 10px;
+    font-size: 20px;
+    color: black;
+  }
+
+  .logo_ohmyfood {
+    text-align: center;
   }
 
   .logo {
-    margin-top: -10px;
-    width: 70%; 
+    width: 40%;
+    padding: 2rem 1rem 0.5rem 1rem;
   }
 
   .map {
@@ -328,11 +359,15 @@ footer i {
   .titre {
     text-align: center;
     font-size: 26px;
-    margin-left: 20px;
   }
 
   button {
     margin-left: 80px;
+  }
+
+  .info {
+    background-color: #f1f1f3;
+    padding: 20px 20px 40px 20px;
   }
 
   .fonctionemment {
@@ -342,7 +377,7 @@ footer i {
   }
 
   .number_box {
-    margin-left: -35px;
+    margin-left: -45px;
   }
 
   .choisir_box {
@@ -351,11 +386,32 @@ footer i {
   }
 
   .choisir_box_element {
-    width: 80%;
+    width: 90%;
   }
 
-  .choisir_box_element_eat {
-    width: 80%;
+  article {
+    background-color: #f1f1f3;
+    padding: 5px 0px 20px 0.2px;
+    margin-top: 60px;
+  }
+
+  .item_green {
+    position: absolute;
+    text-align: center;
+    right: 20px;
+    font-size: small;
+    font-weight: bold;
+    background: #99e2d0;
+    box-shadow: 3px 3px 10px rgb(0 0 0 / 50%);
+    border-radius: 2px;
+    color: green;
+    padding: 7px 17px 7px 17px;
+    bottom: 13rem;
+  }
+
+  .titre_4menu {
+    margin-left: 20px;
+    margin-top: 50px;
   }
 
   .restaurant_4menu {
@@ -365,46 +421,46 @@ footer i {
     padding-left: 0px;
   }
 
-  .titre_4menu {
-   margin-left:-200px;
- }
+  .choisir {
+    margin-left: 30px;
+  }
 
- .restaurant_list {
-  background-color: white;
-  border-radius: 20px;
-  position: relative;
-  width: 100%; 
-  height: max-content;
-}
+  .restaurant_list {
+    background-color: white;
+    border-radius: 20px;
+    position: relative;
+    width: 90%; 
+    height: max-content;
+  }
 
-.restaurant_img {
-  object-fit: cover;
-  width: 100%;
-  border-radius: 20px 20px 0 0;
-  height: 120px;
-}
+  .restaurant_img {
+    object-fit: cover;
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+    height: 120px;
+  }
 
-.text_restaurant {
-  margin-top: -10px;
-  margin-left: 10px;
-}
+  .text_restaurant {
+    margin-top: -10px;
+    margin-left: 10px;
+  }
 
-.text_restaurant i {
-  position: absolute;
-  top: 210px;
-  right: 25px;
-  font-size: 1.5rem;
-}
+  .text_restaurant i {
+    position: absolute;
+    top: 210px;
+    right: 25px;
+    font-size: 1.5rem;
+  }
 
-.titre_footer {
-  margin-top: 1.5rem;
-  margin-left: 20px;
-}  
+  .titre_footer {
+    margin-top: 1.5rem;
+    margin-left: 20px;
+  }  
 
-footer ul {
-  margin-top: -10px;
-  margin-left: 0;
-}
+  footer ul {
+    margin-top: -10px;
+    margin-left: 0;
+  }
 
 }
 
@@ -426,7 +482,7 @@ section {
   font-weight: bold;
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
-  margin-top: -100px;
+  margin-top: -40px;
 }
 
 .list_menu {
