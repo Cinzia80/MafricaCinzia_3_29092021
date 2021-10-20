@@ -1,4 +1,15 @@
 @charset "UTF-8";
+
+@keyframes heart {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/*********************************/
 /* animation loading spinner*/
 @keyframes spin {
   0% {
@@ -13,8 +24,10 @@
   100% {
     transform: translate(-50%, -50%) rotate(360deg);
     opacity: 0;
+    visibility: none;
   }
 }
+
 /* apparition du full container après le loading*/
 @keyframes opacity {
   0% {
@@ -27,6 +40,7 @@
     opacity: 1;
   }
 }
+
 /* appartition progressive du remplissage du coeur*/
 @keyframes progress-bar {
   0% {
@@ -53,16 +67,8 @@
     opacity: 1;
   }
 }
-/* animation click choix menu en vert */
-@keyframes check {
-  0% {
-    right: -99px;
-  }
-  100% {
-    right: -1px;
-    width: 20%;
-  }
-}
+
+
 @keyframes rotate {
   0% {
     transform: rotate(0deg);
@@ -71,6 +77,7 @@
     transform: rotate(360deg);
   }
 }
+
 /*modification ombre bouton commander*/
 @keyframes ombre {
   from {
@@ -89,7 +96,6 @@ body {
 
 .loader {
   position: fixed;
-
   z-index: 999;
   border: 16px solid #f3f3f3;
   border-top: 16px solid #9356dc;
@@ -103,6 +109,7 @@ body {
   width: 120px;
   height: 120px;
   animation: spin 2s linear;
+  visibility: hidden;
 }
 
 .logo_ohmyfood {
@@ -182,7 +189,7 @@ button {
 .number_box {
   background: #9356DC;
   border-radius: 20px;
-  padding: 0.2rem 0.5rem;
+  padding: 0.5rem 0.8rem;
   margin-left: -85px;
 }
 
@@ -195,6 +202,10 @@ button {
 
 .choisir_box i {
   color: #6a6767;
+}
+
+.choisir_box_element:hover {
+  background-color: #f2f2f2;
 }
 
 .item_green {
@@ -269,6 +280,29 @@ button {
   top: 240px;
   right: 25px;
   font-size: 1.5rem;
+}
+
+/************/
+@keyframes heart {
+  from {bottom:#9536dc;}
+  to {top:#9536dc;}
+}
+
+.icon_empty {
+  position: absolute;
+  z-index: 2;
+  right: 10px;
+  opacity: 1;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.icon_empty:hover {
+  color: #9536dc;
+  transition-property: color;
+  transition-duration: 2s;
+  transform-origin: bottom to top;
+  color: linear-gradient(bottom to top, #9356dc, #ff79da);
 }
 
 footer {
@@ -517,6 +551,8 @@ section {
 .description p {
  padding: 5px 10px 5px 0;
  margin: 0 0 5px 0;
+ overflow: hidden;
+ text-overflow: ellipsis;
 }
 
 
@@ -549,6 +585,69 @@ section {
   padding-left: 0;
   white-space: nowrap;
 }
+
+.menu_choix {
+  display: block;
+  background-color: #99e2d0;
+  position: relative;
+  border-top-right-radius: 15%;
+  border-bottom-right-radius: 15%;
+  padding: 40px 0px;
+    text-align: center;
+    width: 15%;
+    float: right;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: clip;
+    border-radius: 0px 20px 20px 0px;
+    animation: 0.5s ease-out;
+    animation-name: choix;
+    margin-top: -99px;
+    margin-left: 20px;
+    visibility: none;
+}
+
+.icon-choix {
+  position: absolute;
+  top: 35%;
+  left: 30%;
+  color: white;
+  font-size: 1.3em;
+  border-radius: 0 20px 20px 0;
+}
+
+.menu_choix:hover {
+visibility: visible;
+animation: active 500ms 0s both cubic-bezier(0,0.8,0.19, 0.94);
+}
+
+ @keyframes choix {
+  0% {
+    width: 0%;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  50% {
+    width: 7%;
+    opacity: 1;
+  }
+
+  100% {
+    width: 15%;
+    opacity: 1;
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/***************************/
 
 .commander {
   text-align: center;
