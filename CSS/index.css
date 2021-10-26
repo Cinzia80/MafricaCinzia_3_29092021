@@ -587,7 +587,7 @@ section {
 }
 
 .menu_choix {
-  dispaly: block;
+  display: block;
   background-color: #99e2d0;
   position: relative;
   border-top-right-radius: 15%;
@@ -603,16 +603,39 @@ section {
     margin-top: -99px;
     margin-left: 20px;
     opacity: 0;
-     animation: 0.5s ease-out reverse checkout;
+     animation: 0.5s ease-out reverse;
+     animation-name: checkout;
 }
 
-.icon-choix {
+@keyframes checkout {
+  0% {
+    width: 20%;
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    width: 0%;
+    opacity: 0;
+  }
+}
+
+.icon-choix  {
   position: absolute;
   top: 35%;
   left: 30%;
   color: white;
   font-size: 1.3em;
   border-radius: 0 20px 20px 0;
+  transition: transform 1s;
+}
+
+.icon-choix i:hover {
+display: block;
+transform: rotate (180°);
 }
 
 .menu_choix:hover + .prix {
@@ -623,16 +646,28 @@ section {
 
 .prix:hover + .menu_choix {
 display: block;
-animation: active 500ms 0s both ease-in reverse;
+animation: active 500ms 0s both cubic-bezier(0,0.8,0.19, 0.94) reverse;
 }
 
 .prix:hover {
+  display: block;
   margin-right: 100px;
   transition: 4s; 
+  animation: 2s ease-out reverse;
+}
+
+@keyframes prix {
+  0% {
+    margin-left: -50px;
+  }
+
+  100% {
+    margin-left: 0px;
+  }
 }
 
 
-@keyframes prix {
+@keyframes prix:hover {
   0% {
     margin-right: 0px;
   }
