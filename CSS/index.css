@@ -587,7 +587,7 @@ section {
 }
 
 .menu_choix {
-  display: block;
+  dispaly: block;
   background-color: #99e2d0;
   position: relative;
   border-top-right-radius: 15%;
@@ -600,11 +600,10 @@ section {
     white-space: nowrap;
     text-overflow: clip;
     border-radius: 0px 20px 20px 0px;
-    animation: 0.5s ease-out;
-    animation-name: choix;
     margin-top: -99px;
     margin-left: 20px;
-    visibility: none;
+    opacity: 0;
+     animation: 0.5s ease-out reverse checkout;
 }
 
 .icon-choix {
@@ -616,16 +615,42 @@ section {
   border-radius: 0 20px 20px 0;
 }
 
-.menu_choix:hover {
-visibility: visible;
-animation: active 500ms 0s both cubic-bezier(0,0.8,0.19, 0.94);
+.menu_choix:hover + .prix {
+  display: block;
+  animation: 500ms ease-in reverse both prix;
+  transition: 2s;
+}
+
+.prix:hover + .menu_choix {
+display: block;
+animation: active 500ms 0s both ease-in reverse;
+}
+
+.prix:hover {
+  margin-right: 100px;
+  transition: 4s; 
+}
+
+
+@keyframes prix {
+  0% {
+    margin-right: 0px;
+  }
+
+  100% {
+    margin-right: 100px;
+  }
+}
+
+.plat:hover +.menu_choix {
+animation: 3s ease-out reverse choix;
 }
 
  @keyframes choix {
+
   0% {
-    width: 0%;
-    opacity: 0;
-    visibility: hidden;
+     width: 15%;
+    opacity: 1;
   }
 
   50% {
@@ -634,8 +659,8 @@ animation: active 500ms 0s both cubic-bezier(0,0.8,0.19, 0.94);
   }
 
   100% {
-    width: 15%;
-    opacity: 1;
+    width: 0%;
+    opacity: 0;
   }
 }
 
@@ -647,6 +672,9 @@ animation: active 500ms 0s both cubic-bezier(0,0.8,0.19, 0.94);
     transform: rotate(360deg);
   }
 }
+
+
+
 /***************************/
 
 .commander {
