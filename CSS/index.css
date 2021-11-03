@@ -190,7 +190,7 @@ button {
   background: #9356DC;
   border-radius: 20px;
   padding: 0.5rem 0.8rem;
-  margin-left: -85px;
+  margin-left: -65px;
 }
 
 .choisir_box {
@@ -282,7 +282,10 @@ button {
   font-size: 1.5rem;
 }
 
-/************/
+.nom_restaurant i {
+  font-size: 22px;
+}
+
 @keyframes heart {
   from {bottom:#9536dc;}
   to {top:#9536dc;}
@@ -403,11 +406,7 @@ footer i {
   .fonctionemment {
     text-align: initial;
     font-size: 24px;
-    margin-top: 100px;
-  }
-
-  .number_box {
-    margin-left: -45px;
+    margin-top: 50px;
   }
 
   .choisir_box {
@@ -453,6 +452,24 @@ footer i {
 
   .choisir {
     margin-left: 30px;
+  }
+
+.check {
+    position: relative;
+    color: white;
+    background-color: #99e2d0;
+    display: block;
+    margin-top: 0;
+    text-align: center;
+    width: 0%;
+    float: right;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: clip;
+    border-radius: 0px 20px 0px
+    opacity: 0;
+    animation: 0.5s ease-out checkout;
+    padding: 18px 5px 5px 5px;
   }
 
   .restaurant_list {
@@ -502,17 +519,8 @@ footer i {
   padding: 0rem 2rem 0 2rem;
   font-family: "Shrikhand", cursive;
   font-weight: 100;
-}
-
-section {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  background-color: #f1f1f3;
-  font-weight: bold;
-  border-top-left-radius: 50px;
-  border-top-right-radius: 50px;
-  margin-top: -40px;
+  margin-left: -10px;
+    font-size: 18px;
 }
 
 .list_menu {
@@ -523,247 +531,36 @@ section {
 .carte_menu {
   margin: 20px 0;
   animation: linear 1s slidein;
-
-}
-
-.carte_menu li {
-  list-style-type: none;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  box-shadow: 3px 3px 10px rgb(0 0 0 / 19%);
-  border-radius: 20px;
-  margin: 20px;
-  background-color: white;
-  cursor: pointer;
-  overflow: hidden;
-}
-
-.nom_plat {
-  width: 100%;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  padding: 10px 0 0px 10px;
-  margin: 0;
-}
-
-.description p {
- padding: 5px 10px 5px 0;
- margin: 0 0 5px 0;
- overflow: hidden;
- text-overflow: ellipsis;
-}
-
-
-.description {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  font-weight: lighter;
-  padding: 5px 0 5px 10px;
-  margin: 0 0 5px 0;
-}
-
-.prix {
-  font-weight: bold;
-  align-self: flex-end;
-  margin: 0 10px 10px 10px;
 }
 
 .carte_menu h3 {
-  font-weight: lighter;
+  font-weight: 300;
   border-bottom: 4px solid #99e2d0;
   width: 10%;
   margin: 0 0 0 20px;
   padding: 0 0 8px 0;
+  font-size: 16px;
 }
 
-.carte_menu ul {
-  padding-left: 0;
-  white-space: nowrap;
-}
-
-.menu_choix {
-  display: block;
-  background-color: #99e2d0;
-  position: relative;
-  border-top-right-radius: 15%;
-  border-bottom-right-radius: 15%;
-  padding: 40px 0px;
-    text-align: center;
-    width: 15%;
-    float: right;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: clip;
-    border-radius: 0px 20px 20px 0px;
-    margin-top: -99px;
-    margin-left: 20px;
-    opacity: 0;
-     animation: 0.5s ease-out reverse;
-     animation-name: checkout;
-}
-
-@keyframes checkout {
-  0% {
-    width: 20%;
-    opacity: 1;
-  }
-
-  50% {
-    opacity: 1;
-  }
-
-  100% {
-    width: 0%;
-    opacity: 0;
-  }
-}
-
-.icon-choix  {
-  position: absolute;
-  top: 35%;
-  left: 30%;
-  color: white;
-  font-size: 1.3em;
-  border-radius: 0 20px 20px 0;
-  transition: transform 1s;
-}
-
-.icon-choix i:hover {
-display: block;
-transform: rotate (180°);
-}
-
-.menu_choix:hover + .prix {
-  display: block;
-  animation: 500ms ease-in reverse both prix;
-  transition: 2s;
-}
-
-.prix:hover + .menu_choix {
-display: block;
-animation: active 500ms 0s both cubic-bezier(0,0.8,0.19, 0.94) reverse;
-}
-
-.prix:hover {
-  display: block;
-  margin-right: 100px;
-  transition: 4s; 
-  animation: 2s ease-out reverse;
-}
-
-@keyframes prix {
-  0% {
-    margin-left: -50px;
-  }
-
-  100% {
-    margin-left: 0px;
-  }
-}
-
-
-@keyframes prix:hover {
-  0% {
-    margin-right: 0px;
-  }
-
-  100% {
-    margin-right: 100px;
-  }
-}
-
-.plat:hover +.menu_choix {
-animation: 3s ease-out reverse choix;
-}
-
- @keyframes choix {
-
-  0% {
-     width: 15%;
-    opacity: 1;
-  }
-
-  50% {
-    width: 7%;
-    opacity: 1;
-  }
-
-  100% {
-    width: 0%;
-    opacity: 0;
-  }
-}
-
-@keyframes rotate {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-
-
-/***************************/
-
-.commander {
-  text-align: center;
-  margin-bottom:20px;
-}
-
-.commander a {
-  color: white;
-  text-decoration: none;
-  position: relative;
-  background: linear-gradient(#ff79da, #9356dc);
-  padding: 10px ;
-  border-radius: 30px;
-}
-
-
-/***************************css menu iPhone8*******************************/
-
-@media only screen and (max-width:600px) {
-
-  .header_nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
-
-  .list_menu {
-    display: flex;
-    flex-direction: column;
-  }
-
-}
-
-/*************************test******************************/
-  .box_menu {
+  .box_plat {
   padding: 0px 0px 0px 5px;
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.192);
   border-radius: 20px;
-  margin-bottom: 20px;
-  margin-left: auto;
+  margin-top: 20px;
+  margin-left: 15px;
   margin-right: auto;
-  width: 85%;
+  width: 90%;
   display: flex;
-  height: fit-content;
+  height: 70px;
 }
 
-.box_menu .check {
+.check {
   position: relative;
   color: white;
   background-color: #99e2d0;
-  padding: 10px;
   display: block;
-  padding: 30px 0px;
+  padding: 15px 0px;
+  margin-top: 0;
   text-align: center;
   width: 0%;
   float: right;
@@ -792,10 +589,9 @@ animation: 3s ease-out reverse choix;
 }
 
 .prix {
-  float: right;
-  margin-top: 50px;
-  margin-left: -20px;
   font-weight: bold;
+  align-self: flex-end;
+  margin-bottom: -10px;
   padding-right: 20px;
 }
 
@@ -809,7 +605,7 @@ animation: 3s ease-out reverse choix;
   }
 }
 
-.box_menu:hover .prix p {
+.box_plat:hover .prix p {
   animation: 0.5s ease-in reverse both prix;
 }
 
@@ -823,23 +619,29 @@ animation: 3s ease-out reverse choix;
   }
 }
 
-.texte_menu h2 {
+.titre_plat {
+  width: 100%;
+  margin-left: 10px;
+}
+
+.titre_plat h4 {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
   width: 90%;
+ margin-top: 0.8em;
+    font-size: 18px;
 }
 
-.texte_menu {
-  width: 100%;
-}
-
-.texte_menu p {
+.titre_plat p {
   animation: 0.5s ease-in reverse both width-out;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+  margin-top: -15px;
+  font-weight: 400;
 }
+
 @keyframes width-out {
   0% {
     width: 100%;
@@ -856,7 +658,7 @@ animation: 3s ease-out reverse choix;
   }
 }
 
-.box_menu:hover .texte_menu p {
+.box_plat:hover .titre_plat p {
   overflow: hidden;
   white-space: nowrap;
   animation: 0.5s ease-in both width;
@@ -882,13 +684,14 @@ animation: 3s ease-out reverse choix;
 .check i {
   font-size: 20px;
   transition: transform 1s;
+  margin-top: 10px;
 }
 
-.box_menu:hover {
+.box_plat:hover {
   transition: all 1s ease-out;
 }
 
-.box_menu:hover .check {
+.box_plat:hover .check {
   opacity: 1;
   animation: 0.5s ease-in reverse both check;
 }
@@ -907,7 +710,7 @@ animation: 3s ease-out reverse choix;
   vertical-align: center;
 }
 
-.box_menu:hover .check i {
+.box_plat:hover .check i {
   animation: 0.5s alternate rotate;
 }
 
@@ -917,5 +720,54 @@ animation: 3s ease-out reverse choix;
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+
+/***************************/
+
+.commander {
+  text-align: center;
+  margin-bottom:25px;
+  margin-top: 15px;
+}
+
+.commander a {
+  color: white;
+  text-decoration: none;
+  position: relative;
+  background: linear-gradient(#ff79da, #9356dc);
+  padding: 10px ;
+  border-radius: 30px;
+}
+
+/***************************css menu iPhone8*******************************/
+
+@media only screen and (max-width:600px) {
+
+  .header_nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+.image_rest img {
+  border-radius: 0 ;
+}
+
+.menu {
+  border-radius: 60px 60px 0 0;
+  margin-top: -50px;
+    position: relative;
+    z-index: 10;
+    background-color: #f2f2f2;
+    width: 100vw;
+    text-align: inherit;
+    padding-bottom: 15px;
+}
+
+  .list_menu {
+    display: flex;
+    flex-direction: column;
+    margin-top: -10px;
   }
 }
