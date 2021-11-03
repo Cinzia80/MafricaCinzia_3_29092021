@@ -24,7 +24,6 @@
   100% {
     transform: translate(-50%, -50%) rotate(360deg);
     opacity: 0;
-    visibility: none;
   }
 }
 
@@ -289,11 +288,6 @@ button {
   font-size: 22px;
 }
 
-@keyframes heart {
-  from {bottom:#9536dc;}
-  to {top:#9536dc;}
-}
-
 .icon_empty {
   position: absolute;
   z-index: 2;
@@ -304,11 +298,16 @@ button {
 }
 
 .icon_empty:hover {
-  color: #9536dc;
-  transition-property: color;
-  transition-duration: 2s;
-  transform-origin: bottom to top;
-  color: linear-gradient(bottom to top, #9356dc, #ff79da);
+  color: #9356dc;
+  background: linear-gradient(#9356dc, #ff79da);
+  text-shadow: none;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  animation: 0.2s linear;
+}
+
+.icon_empty:focus {
+   background: linear-gradient(#ff91e0, #9460d3);
 }
 
 footer {
@@ -698,7 +697,7 @@ footer i {
     overflow: hidden;
     white-space: nowrap;
     text-overflow: clip;
-    border-radius: 0px 20px 0px
+    border-radius: 0px 20px 0px;
     opacity: 0;
     animation: 0.5s ease-out checkout;
     padding: 18px 5px 5px 5px;
