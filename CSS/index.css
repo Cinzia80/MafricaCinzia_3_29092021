@@ -9,8 +9,8 @@
   }
 }
 
-/*********************************/
 /* animation loading spinner*/
+
 @keyframes spin {
   0% {
     visibility: visible;
@@ -29,6 +29,7 @@
 }
 
 /* apparition du full container après le loading*/
+
 @keyframes opacity {
   0% {
     opacity: 0;
@@ -42,6 +43,7 @@
 }
 
 /* appartition progressive du remplissage du coeur*/
+
 @keyframes progress-bar {
   0% {
     opacity: 0;
@@ -53,6 +55,7 @@
   }
 }
 /* animation apparition progressive des plats*/
+
 @keyframes slidein {
   0% {
     transform: translateY(100%);
@@ -68,7 +71,6 @@
   }
 }
 
-
 @keyframes rotate {
   0% {
     transform: rotate(0deg);
@@ -79,6 +81,7 @@
 }
 
 /*modification ombre bouton commander*/
+
 @keyframes ombre {
   from {
     box-shadow: 10px 10px rgba(180, 74, 209, 0.158);
@@ -356,160 +359,7 @@ footer i {
 }
 
 
-/***********************iPhone 6/7/8******************************/
 
-@media only screen and (max-width:600px) {
-
-  body {
-    padding: 0px 0px 0px 0px;
-    overflow-x: hidden;
-  }
-
-  .arrow_left {
-    margin-top: 30px;
-    margin-left: 10px;
-    font-size: 20px;
-    color: black;
-  }
-
-  .logo_ohmyfood {
-    text-align: center;
-  }
-
-  .logo {
-    width: 40%;
-    padding: 2rem 1rem 0.5rem 1rem;
-  }
-
-  .map {
-    height: 30px;
-  }
-
-  .map i {
-    padding-right: 10px;
-  }
-
-  .searchterm {
-    margin-top: 0.5rem;
-  }
-
-  .titre {
-    text-align: center;
-    font-size: 26px;
-  }
-
-  .info {
-    background-color: #f1f1f3;
-    padding: 20px 20px 40px 20px;
-  }
-
-  .fonctionemment {
-    text-align: initial;
-    font-size: 24px;
-    margin-top: 50px;
-  }
-
-  .choisir_box {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .choisir_box_element {
-    width: 90%;
-  }
-
-  article {
-    background-color: #f1f1f3;
-    padding: 5px 0px 20px 0.2px;
-    margin-top: 60px;
-  }
-
-  .item_green {
-    position: absolute;
-    text-align: center;
-    right: 20px;
-    font-size: small;
-    font-weight: bold;
-    background: #99e2d0;
-    box-shadow: 3px 3px 10px rgb(0 0 0 / 50%);
-    border-radius: 2px;
-    color: green;
-    padding: 7px 17px 7px 17px;
-    bottom: 13rem;
-  }
-
-  .titre_4menu {
-    margin-left: 20px;
-    margin-top: 50px;
-  }
-
-  .restaurant_4menu {
-    display: flex;
-    flex-direction: column;
-    row-gap: 25px;
-    padding-left: 0px;
-  }
-
-  .choisir {
-    margin-left: 30px;
-  }
-
-.check {
-    position: relative;
-    color: white;
-    background-color: #99e2d0;
-    display: block;
-    margin-top: 0;
-    text-align: center;
-    width: 0%;
-    float: right;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: clip;
-    border-radius: 0px 20px 0px
-    opacity: 0;
-    animation: 0.5s ease-out checkout;
-    padding: 18px 5px 5px 5px;
-  }
-
-  .restaurant_list {
-    background-color: white;
-    border-radius: 20px;
-    position: relative;
-    width: 90%; 
-    height: max-content;
-  }
-
-  .restaurant_img {
-    object-fit: cover;
-    width: 100%;
-    border-radius: 20px 20px 0 0;
-    height: 120px;
-  }
-
-  .text_restaurant {
-    margin-top: -10px;
-    margin-left: 10px;
-  }
-
-  .text_restaurant i {
-    position: absolute;
-    top: 210px;
-    right: 25px;
-    font-size: 1.5rem;
-  }
-
-  .titre_footer {
-    margin-top: 1.5rem;
-    margin-left: 20px;
-  }  
-
-  footer ul {
-    margin-top: -10px;
-    margin-left: 0;
-  }
-
-}
 
 /************************************css menu restaurant***************************************/
 .nom_restaurant {
@@ -723,8 +573,6 @@ footer i {
   }
 }
 
-/***************************/
-
 .commander {
   text-align: center;
   margin-bottom:25px;
@@ -738,6 +586,160 @@ footer i {
   background: linear-gradient(#ff79da, #9356dc);
   padding: 10px ;
   border-radius: 30px;
+}
+
+/***********************iPhone 6/7/8******************************/
+
+@media only screen and (max-width:600px) {
+
+  body {
+    padding: 0px 0px 0px 0px;
+    overflow-x: hidden;
+  }
+
+  .arrow_left {
+    margin-top: 30px;
+    margin-left: 10px;
+    font-size: 20px;
+    color: black;
+  }
+
+  .logo_ohmyfood {
+    text-align: center;
+  }
+
+  .logo {
+    width: 40%;
+    padding: 2rem 1rem 0.5rem 1rem;
+  }
+
+  .map {
+    height: 30px;
+  }
+
+  .map i {
+    padding-right: 10px;
+  }
+
+  .searchterm {
+    margin-top: 0.5rem;
+  }
+
+  .titre {
+    text-align: center;
+    font-size: 26px;
+  }
+
+  .info {
+    background-color: #f1f1f3;
+    padding: 20px 20px 40px 20px;
+  }
+
+  .fonctionemment {
+    text-align: initial;
+    font-size: 24px;
+    margin-top: 50px;
+  }
+
+  .choisir_box {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .choisir_box_element {
+    width: 90%;
+  }
+
+  article {
+    background-color: #f1f1f3;
+    padding: 5px 0px 20px 0.2px;
+    margin-top: 60px;
+  }
+
+  .item_green {
+    position: absolute;
+    text-align: center;
+    right: 20px;
+    font-size: small;
+    font-weight: bold;
+    background: #99e2d0;
+    box-shadow: 3px 3px 10px rgb(0 0 0 / 50%);
+    border-radius: 2px;
+    color: green;
+    padding: 7px 17px 7px 17px;
+    bottom: 13rem;
+  }
+
+  .titre_4menu {
+    margin-left: 20px;
+    margin-top: 50px;
+  }
+
+  .restaurant_4menu {
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+    padding-left: 0px;
+  }
+
+  .choisir {
+    margin-left: 30px;
+  }
+
+.check {
+    position: relative;
+    color: white;
+    background-color: #99e2d0;
+    display: block;
+    margin-top: 0;
+    text-align: center;
+    width: 0%;
+    float: right;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: clip;
+    border-radius: 0px 20px 0px
+    opacity: 0;
+    animation: 0.5s ease-out checkout;
+    padding: 18px 5px 5px 5px;
+  }
+
+  .restaurant_list {
+    background-color: white;
+    border-radius: 20px;
+    position: relative;
+    width: 90%; 
+    height: max-content;
+  }
+
+  .restaurant_img {
+    object-fit: cover;
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+    height: 120px;
+  }
+
+  .text_restaurant {
+    margin-top: -10px;
+    margin-left: 10px;
+  }
+
+  .text_restaurant i {
+    position: absolute;
+    top: 210px;
+    right: 25px;
+    font-size: 1.5rem;
+  }
+
+  .titre_footer {
+    margin-top: 1.5rem;
+    margin-left: 20px;
+  }  
+
+  footer ul {
+    margin-top: -10px;
+    margin-left: 0;
+  }
 }
 
 /***************************css menu iPhone8*******************************/
