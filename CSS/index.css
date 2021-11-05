@@ -147,6 +147,7 @@ body {
 .subtitre {
 	text-align: center;
 	font-weight: 300;
+  padding: 0px 20px;
 }
 
 button {
@@ -223,6 +224,10 @@ button {
   padding: 7px 17px 7px 17px;
   bottom: 16rem;
 }
+
+.titre_4menu h2 {
+    margin-left: 10px;
+  }
 
 .restaurant_4menu {
 	display: flex;
@@ -611,6 +616,14 @@ footer i {
     width: 40%;
     padding: 2rem 1rem 0.5rem 1rem;
   }
+
+  .icon_empty_menu {
+    z-index: 2;
+    right: 10px;
+    opacity: 1;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
 
   .map {
     height: 30px;
