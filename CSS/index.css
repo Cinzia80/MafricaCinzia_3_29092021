@@ -377,6 +377,26 @@ footer i {
     font-size: 18px;
 }
 
+.icon_empty_menu {
+    z-index: 2;
+    right: 10px;
+    opacity: 1;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.icon_empty_menu:hover {
+  color: #9356dc;
+  background: linear-gradient(#9356dc, #ff79da);
+  text-shadow: none;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  animation: 0.2s linear;
+}
+
+.icon_empty_menu:focus {
+   background: linear-gradient(#ff91e0, #9460d3);
+}
 .list_menu {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -616,14 +636,6 @@ footer i {
     width: 40%;
     padding: 2rem 1rem 0.5rem 1rem;
   }
-
-  .icon_empty_menu {
-    z-index: 2;
-    right: 10px;
-    opacity: 1;
-    color: white;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-}
 
   .map {
     height: 30px;
