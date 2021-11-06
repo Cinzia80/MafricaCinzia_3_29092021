@@ -258,7 +258,7 @@ button {
 .restaurant_img {
   object-fit: cover;
   width: 100%;
-  max-height: 300px;
+  max-height: 210px;
   min-height: 180px;
   border-radius: 20px 20px 0 0;
 }
