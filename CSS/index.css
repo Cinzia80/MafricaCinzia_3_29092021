@@ -258,7 +258,7 @@ button {
 .restaurant_img {
   object-fit: cover;
   width: 100%;
-  max-height: 210px;
+  max-height: 300px;
   min-height: 180px;
   border-radius: 20px 20px 0 0;
 }
@@ -394,7 +394,7 @@ footer i {
   animation: 0.2s linear;
 }
 
-.icon_empty_menu:focus {
+.icon_empty:focus {
    background: linear-gradient(#ff91e0, #9460d3);
 }
 .list_menu {
@@ -740,7 +740,7 @@ footer i {
     object-fit: cover;
     width: 100%;
     border-radius: 20px 20px 0 0;
-    height: 120px;
+    height: 250px;
   }
 
   .text_restaurant {
@@ -750,7 +750,6 @@ footer i {
 
   .text_restaurant i {
     position: absolute;
-    top: 210px;
     right: 25px;
     font-size: 1.5rem;
   }
@@ -777,7 +776,8 @@ footer i {
   }
 
 .image_rest img {
-  border-radius: 0 ;
+  border-radius: 0;
+  object-position: bottom;
 }
 
 .menu {
