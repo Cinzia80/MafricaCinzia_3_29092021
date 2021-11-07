@@ -848,6 +848,10 @@ header.accueil {
     margin-bottom: 20px;
 }
 
+.number_box {
+  margin-left: -85px;
+}
+
 .titre_4menu h2 {
     margin-left: 15px;
     margin-top: 50px;
