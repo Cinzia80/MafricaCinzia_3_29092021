@@ -178,6 +178,10 @@ button {
   margin-bottom: 20px;
 }
 
+.choisir_box_element:hover {
+    cursor:pointer;
+  }
+
 .choisir_box_element_eat {
   display: flex;
   flex-wrap: nowrap;
@@ -433,6 +437,10 @@ footer i {
   display: flex;
   height: 70px;
   background-color: white;
+}
+
+.box_plat:hover {
+  cursor: pointer;
 }
 
 .check {
@@ -816,6 +824,8 @@ footer i {
 
 @media only screen and (min-width:600px) {
 
+
+
 header.accueil {
   margin-top: 70px;
 }
@@ -846,7 +856,7 @@ header.accueil {
     background-color: #fff;
     font-weight: bold;
     margin-bottom: 20px;
-}
+  }
 
 .number_box {
   margin-left: -85px;
