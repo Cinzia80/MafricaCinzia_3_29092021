@@ -495,7 +495,7 @@ footer i {
 }
 
 .titre_plat {
-  width: 100%;
+  width: 80%;
   margin-left: 10px;
 }
 
@@ -680,6 +680,10 @@ footer i {
     padding: 5px 0px 20px 0.2px;
     margin-top: 60px;
   }
+
+  .prix {
+  padding-right: 0;
+}
 
   .item_green {
     position: absolute;
