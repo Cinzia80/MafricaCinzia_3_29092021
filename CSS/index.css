@@ -193,7 +193,7 @@ button {
   background: #9356DC;
   border-radius: 20px;
   padding: 0.5rem 0.8rem;
-  margin-left: -65px;
+  margin-left: -70px;
 }
 
 .choisir_box {
@@ -226,7 +226,7 @@ button {
 }
 
 .titre_4menu h2 {
-    margin-left: 10px;
+    margin-left: 15px;
   }
 
 .restaurant_4menu {
@@ -426,6 +426,7 @@ footer i {
   width: 90%;
   display: flex;
   height: 70px;
+  background-color: white;
 }
 
 .check {
@@ -691,12 +692,14 @@ footer i {
     border-radius: 2px;
     color: green;
     padding: 7px 17px 7px 17px;
-    bottom: 13rem;
+    bottom: 15rem;
   }
 
   .titre_4menu {
-    margin-left: 20px;
+    padding-bottom: 10px;
     margin-top: 50px;
+    background-color: #f1f1f3;
+    padding-top: 20px;
   }
 
   .restaurant_4menu {
@@ -704,6 +707,7 @@ footer i {
     flex-direction: column;
     row-gap: 25px;
     padding-left: 0px;
+    background-color: #f1f1f3;
   }
 
   .choisir {
@@ -734,6 +738,7 @@ footer i {
     position: relative;
     width: 90%; 
     height: max-content;
+    margin-top: -10px;
   }
 
   .restaurant_img {
@@ -796,4 +801,23 @@ footer i {
     flex-direction: column;
     margin-top: -10px;
   }
+}
+
+/************************desktop*************************/
+
+@media only screen and (min-width:600px) {
+
+  .choisir_box_element {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 25%;
+    align-items: center;
+    box-shadow: 0 6px 10px #0000004b;
+    border-radius: 20px;
+    background-color: #fff;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
 }
