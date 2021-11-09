@@ -218,11 +218,11 @@ button:hover {
 
 .choisir_box i {
   color: #6a6767;
-  font-size: 25px;
+  font-size: 22px;
 }
 
 .choisir_box_element:hover{
-  background-color: #ff75da20;
+  background-color: #ff70da20;
 }
 
 .choisir_box_element:hover .hover_color i {
@@ -881,6 +881,5 @@ header.accueil {
 footer {
   margin-top: 50px;
 }
-
 }
 
