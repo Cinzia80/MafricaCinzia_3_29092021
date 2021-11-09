@@ -222,8 +222,9 @@ button:hover {
 }
 
 .choisir_box_element:hover{
-  background-color: #ff70da20;
+  background-color: #e243bc13;
 }
+
 
 .choisir_box_element:hover .hover_color i {
   color: #9356DC;
