@@ -209,12 +209,8 @@ button:hover {
   font-size: 22px;
 }
 
-.choisir_box_element:hover{
-  background-color: #d29cc42b;
-}
-
-.test {
-   background-color: #dad2d84d;
+.choisir_box_element:hover {
+  background-color: #e4d5f685;
 }
 
 .choisir_box_element:hover .hover_color i {
