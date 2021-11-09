@@ -163,6 +163,10 @@ button {
   border: none;
 }
 
+button:hover {
+  cursor: pointer;
+}
+
 .choisir_box_element {
   display: flex;
   flex-wrap: nowrap;
@@ -201,6 +205,10 @@ button {
   margin-left: -70px;
 }
 
+.box_titre_1 {
+  margin-right:-15px;
+}
+
 .choisir_box {
   display: flex;
   flex-direction: row;
@@ -210,11 +218,16 @@ button {
 
 .choisir_box i {
   color: #6a6767;
+  font-size: 25px;
 }
 
-.choisir_box_element:hover {
-  background-color: #ff79da30;
+.choisir_box_element:hover{
+  background-color: #ff75da20;
 }
+
+.choisir_box_element:hover .hover_color i {
+  color: #9356DC;
+ }
 
 .item_green {
   position: absolute;
@@ -824,8 +837,6 @@ footer i {
 
 @media only screen and (min-width:600px) {
 
-
-
 header.accueil {
   margin-top: 70px;
 }
@@ -872,3 +883,4 @@ footer {
 }
 
 }
+
