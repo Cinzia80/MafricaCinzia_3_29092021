@@ -186,18 +186,6 @@ button:hover {
     cursor:pointer;
   }
 
-.choisir_box_element_eat {
-  display: flex;
-  flex-wrap: nowrap;
-  flex-direction: row;
-  justify-content: space-evenly;
-  width: 25%;
-  align-items: center;
-  background: #f2f2f2;
-  border-radius: 25px 25px 25px 25px;
-  padding: 10px;
-}
-
 .number_box {
   background: #9356DC;
   border-radius: 20px;
@@ -222,11 +210,8 @@ button:hover {
 }
 
 .choisir_box_element:hover{
-  background-color: #e4d5f6;
+  background-color: #b694b82e;
 }
-
-
-
 
 .choisir_box_element:hover .hover_color i {
   color: #9356DC;
